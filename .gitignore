@@ -1,0 +1,106 @@
+# =====================================================
+# Echoes Of Ronahi
+# Unreal Engine 5.8
+# C++ + Blueprint Project
+# =====================================================
+
+# =====================================================
+# Unreal Engine Generated Files
+# =====================================================
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+ShaderDebugInfo/
+
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# =====================================================
+# Packaging Output
+# =====================================================
+Builds/
+Packages/
+StagedBuilds/
+
+# =====================================================
+# Crash Reports
+# =====================================================
+CrashReportClient/
+
+# =====================================================
+# Unreal Build & Cache Files
+# =====================================================
+*.log
+*.tmp
+*.temp
+*.pdb
+*.dll
+*.lib
+*.exp
+*.obj
+
+# =====================================================
+# Visual Studio 2026 / Rider / IDE Files
+# =====================================================
+.vs/
+.idea/
+.vscode/
+*.sln
+*.slnx
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+*.opendb
+*.opensdf
+*.sdf
+*.xcodeproj
+*.xcworkspace
+
+# =====================================================
+# Operating System Files
+# =====================================================
+.DS_Store
+Thumbs.db
+
+# =====================================================
+# Unreal Editor - Kisiye Ozel Ayarlar
+# (Bunlar sadece senin local editorune ait, commit edilmemeli)
+# =====================================================
+Config/DefaultEditorPerProjectUserSettings.ini
+
+# =====================================================
+# Keep Unreal Project File
+# =====================================================
+!*.uproject
+
+# =====================================================
+# Keep C++ Source Code
+# =====================================================
+!Source/
+!Source/**
+
+# =====================================================
+# Keep Unreal Config Files
+# Sadece projenin calismasi icin gereken, paylasilmasi gereken .ini'ler
+# =====================================================
+Config/*
+!Config/DefaultEngine.ini
+!Config/DefaultGame.ini
+!Config/DefaultInput.ini
+!Config/DefaultEditor.ini
+!Config/DefaultGameplayTags.ini
+!Config/Tags/
+!Config/Tags/**
+
+# =====================================================
+# Keep Unreal Content
+# Blueprint / Maps / Materials / Assets
+# =====================================================
+!Content/
+!Content/**
+!**/*.uasset
+!**/*.umap
