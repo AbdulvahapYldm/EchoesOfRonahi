@@ -15,6 +15,10 @@ public class EchoesOfRonahi : ModuleRules
 			"Engine", 
 			"InputCore",
             "EnhancedInput",
+			"UMG",
+            "GameplayTags",
+            "GameplayAbilities",
+            "GameplayTasks",
 
 
         });
