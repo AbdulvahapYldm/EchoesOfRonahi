@@ -5,7 +5,6 @@
 
 AEOR_GameModeBase::AEOR_GameModeBase()
 {
-    PrimaryActorTick.bCanEverTick = false;
-    PrimaryActorTick.bStartWithTickEnabled = false;
-
+	PrimaryActorTick.bCanEverTick = false;
+	PrimaryActorTick.bStartWithTickEnabled = false;
 }

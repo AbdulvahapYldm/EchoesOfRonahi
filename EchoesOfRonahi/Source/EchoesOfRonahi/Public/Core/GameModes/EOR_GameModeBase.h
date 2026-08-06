@@ -14,6 +14,7 @@ class ECHOESOFRONAHI_API AEOR_GameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+
 public:
 
 	AEOR_GameModeBase();
