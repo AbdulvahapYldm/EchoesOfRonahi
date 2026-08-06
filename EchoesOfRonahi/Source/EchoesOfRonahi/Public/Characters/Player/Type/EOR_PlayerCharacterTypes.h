@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// © 2026 Abdulvahap YILDIRIM. All rights reserved. This project and its contents are protected by copyright law.
 
 #pragma once
 
