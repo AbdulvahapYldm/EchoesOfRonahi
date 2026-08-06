@@ -109,9 +109,9 @@ Focus areas include:
 
 ### Core
 - [x] Project Setup
-- [ ] Character Controller
-- [ ] Camera
-- [ ] Enhanced Input
+- [x] Character Controller
+- [x] Camera
+- [x] Enhanced Input
 
 ### Combat
 - [ ] Melee Combat
@@ -126,7 +126,7 @@ Focus areas include:
 - [ ] Attributes
 
 ### Gameplay Ability System
-- [ ] Ability Framework
+- [x] Ability Framework
 - [ ] Gameplay Effects
 - [ ] Attribute Set
 
