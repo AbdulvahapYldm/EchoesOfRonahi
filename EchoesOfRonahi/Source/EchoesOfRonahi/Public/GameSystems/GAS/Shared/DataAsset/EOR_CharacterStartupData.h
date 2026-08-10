@@ -4,21 +4,22 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "EOR_AbilitySet.generated.h"
+#include "EOR_CharacterStartupData.generated.h"
 
 /**
  * 
  */
 class UEOR_AbilitySystemComponent;
 class UEOR_BaseGameplayAbility;
+class UGameplayEffect;
 
 UCLASS()
-class ECHOESOFRONAHI_API UEOR_AbilitySet : public UDataAsset
+class ECHOESOFRONAHI_API UEOR_CharacterStartupData : public UDataAsset
 {
 	GENERATED_BODY()
 	
 public:
-    virtual void GiveToAbilitySystem(UEOR_AbilitySystemComponent* ASC, int32 AbilityLevel = 1);
+    virtual void GiveToAbilitySystem(UEOR_AbilitySystemComponent* ASC, int32 ApplyLevel = 1);
 
 protected:
     // [Category 1] Player/system triggered
@@ -37,9 +38,11 @@ protected:
     UPROPERTY(EditDefaultsOnly, Category = "Abilities|Conditional")
     TArray<TSubclassOf<UEOR_BaseGameplayAbility>> ConditionalAbilities;
 
+    UPROPERTY(EditDefaultsOnly, Category = "GameplayEffects")
+    TArray< TSubclassOf < UGameplayEffect >> StartupGameplayEffects;
+
     // Helper: Grant array of abilities
     void GrantAbilities(const TArray<TSubclassOf<UEOR_BaseGameplayAbility>>& AbilitiesToGrant,
-        UEOR_AbilitySystemComponent* ASC,
-        int32 AbilityLevel,
-        bool bAutoActivate = false);
+        UEOR_AbilitySystemComponent* ASC,int32 AbilityLevel,bool bAutoActivate = false);
+
 };

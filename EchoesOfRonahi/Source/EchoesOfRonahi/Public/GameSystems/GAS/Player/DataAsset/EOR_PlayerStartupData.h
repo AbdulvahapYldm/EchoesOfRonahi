@@ -3,10 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameSystems/GAS/Shared/DataAsset/EOR_AbilitySet.h"
+#include "GameSystems/GAS/Shared/DataAsset/EOR_CharacterStartupData.h"
 #include "GameplayTagContainer.h"
 #include "GameplayAbilitySpec.h" 
-#include "EOR_PlayerAbilitySet.generated.h"
+#include "EOR_PlayerStartupData.generated.h"
 
 /**
  * 
@@ -44,7 +44,7 @@ public:
 
 
 UCLASS()
-class ECHOESOFRONAHI_API UEOR_PlayerAbilitySet : public UEOR_AbilitySet
+class ECHOESOFRONAHI_API UEOR_PlayerStartupData : public UEOR_CharacterStartupData
 {
 	GENERATED_BODY()
 
@@ -57,7 +57,7 @@ public:
 
 private:
     // Player-specific abilities with input mapping
-    UPROPERTY(EditDefaultsOnly, Category = "Player Abilities", meta = (TitleProperty = "InputTag"))
+    UPROPERTY(EditDefaultsOnly, Category = "Abilities", meta = (TitleProperty = "InputTag"))
     TArray<FEOR_PlayerAbilityEntry> PlayerInputAbilityies;
 	
 };

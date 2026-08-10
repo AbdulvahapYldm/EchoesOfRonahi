@@ -1,14 +1,13 @@
 // © 2026 Abdulvahap YILDIRIM. All rights reserved. This project and its contents are protected by copyright law.
 
 
-#include "GameSystems/GAS/Player/DataAsset/EOR_PlayerAbilitySet.h"
-
+#include "GameSystems/GAS/Player/DataAsset/EOR_PlayerStartupData.h"
 #include "GameSystems/GAS/Shared/Components/EOR_AbilitySystemComponent.h"
 #include "GameSystems/GAS/Player/GameplayAbility/EOR_BasePlayerGameplayAbility.h"
 
 
 
-void UEOR_PlayerAbilitySet::GiveToAbilitySystem(UEOR_AbilitySystemComponent* ASC, int32 AbilityLevel)
+void UEOR_PlayerStartupData::GiveToAbilitySystem(UEOR_AbilitySystemComponent* ASC, int32 AbilityLevel)
 {
     // [1] Grant base abilities (passive, conditional, etc.)
     // This calls parent's implementation which handles all 4 categories
@@ -30,7 +29,7 @@ void UEOR_PlayerAbilitySet::GiveToAbilitySystem(UEOR_AbilitySystemComponent* ASC
 
 }
 
-const TArray<FEOR_PlayerAbilityEntry>& UEOR_PlayerAbilitySet::GetPlayerInputAbilityies() const
+const TArray<FEOR_PlayerAbilityEntry>& UEOR_PlayerStartupData::GetPlayerInputAbilityies() const
 {
     return PlayerInputAbilityies;
 }
