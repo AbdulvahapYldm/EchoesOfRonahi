@@ -13,7 +13,9 @@
 				"EnhancedInput",
 				"DeveloperSettings",
 				"GameplayAbilities",
-				"CommonUI"
+				"CommonUI",
+				"CoreUObject",
+				"UMG"
 			]
 		}
 	],

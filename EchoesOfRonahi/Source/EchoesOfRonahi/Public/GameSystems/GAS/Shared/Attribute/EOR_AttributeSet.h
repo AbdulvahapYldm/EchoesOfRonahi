@@ -22,6 +22,9 @@ class ECHOESOFRONAHI_API UEOR_AttributeSet : public UAttributeSet
 	GENERATED_BODY()
 	
 public:
+
+
+
 	virtual void PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data) override;
 
 	// Health
