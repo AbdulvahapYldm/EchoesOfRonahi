@@ -13,7 +13,7 @@ void UEOR_AbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InIn
 
 		if (!AbilitySpec.GetDynamicSpecSourceTags().HasTagExact(InInputTag)) continue;
 
-		if (InInputTag.MatchesTag(Input::Action::Behavior::Toggle) && AbilitySpec.IsActive())
+		if (InInputTag.MatchesTag(EchoesOfRonahi::Input::Action::Behavior::Toggle) && AbilitySpec.IsActive())
 		{
 			CancelAbilityHandle(AbilitySpec.Handle);
 			break;
@@ -29,7 +29,7 @@ void UEOR_AbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InIn
 
 void UEOR_AbilitySystemComponent::OnAbilityInputReleased(const FGameplayTag& InInputTag)
 {
-	if (!InInputTag.IsValid() || !InInputTag.MatchesTag(Input::Action::Behavior::Hold))
+	if (!InInputTag.IsValid() || !InInputTag.MatchesTag(EchoesOfRonahi::Input::Action::Behavior::Hold))
 	{
 		return;
 	}

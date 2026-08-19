@@ -3,10 +3,6 @@
 
 #include "Core/States/EOR_PlayerState.h"
 
-
 AEOR_PlayerState::AEOR_PlayerState()
 {
-
 }
-
-

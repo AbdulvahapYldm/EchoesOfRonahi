@@ -25,7 +25,7 @@ struct FEOR_PlayerAbilityEntry
 
 public:
     // Which input will trigger this ability (e.g., "Input.Player.LightAttack")
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Categories = "Input"))
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Categories = "EchoesOfRonahi.Input"))
     FGameplayTag InputTag;
 
     // The ability to grant

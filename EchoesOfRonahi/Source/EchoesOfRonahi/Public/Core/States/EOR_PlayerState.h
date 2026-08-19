@@ -10,6 +10,7 @@
  * 
  */
 
+
 UCLASS()
 class ECHOESOFRONAHI_API AEOR_PlayerState : public APlayerState
 {
@@ -19,5 +20,7 @@ class ECHOESOFRONAHI_API AEOR_PlayerState : public APlayerState
 public:
 
 	AEOR_PlayerState();
+
+
 
 };
