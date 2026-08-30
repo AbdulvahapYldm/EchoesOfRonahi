@@ -20,6 +20,7 @@ public class EchoesOfRonahi : ModuleRules
             "GameplayTags",
             "GameplayAbilities",
             "GameplayTasks",
+			"PropertyPath",
 
 
         });
