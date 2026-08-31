@@ -23,6 +23,7 @@ public class EchoesOfRonahi : ModuleRules
 			"PropertyPath",
 
 
+
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
@@ -33,6 +34,7 @@ public class EchoesOfRonahi : ModuleRules
 			"Slate",
 			"SlateCore",
 			"AnimGraphRuntime",
+			"PreLoadScreen"
 
         });
 		
